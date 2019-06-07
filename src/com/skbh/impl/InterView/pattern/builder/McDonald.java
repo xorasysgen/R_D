@@ -12,6 +12,16 @@ public class McDonald {
 		
 		System.out.println(m);
 		System.out.println();
+		
+		Activity ac=new Activity.ActivityBuilder()
+				.makeId(new Long(10))
+				.needClose("Yes")
+				.goLive("Keep Alive")
+				.build();
+		
+		System.out.println(ac);
+				
+				
 
 	}
 
