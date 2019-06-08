@@ -2,6 +2,7 @@ package code.functionalInterface;
 
 public class LambdaVsAnonymous {
 
+	@SuppressWarnings("unused")
 	public void testAnonymous() {
 		final int cnt = 0; 
         Runnable r = new Runnable() {

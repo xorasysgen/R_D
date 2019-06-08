@@ -4,6 +4,7 @@ import java.util.function.Predicate;
 
 public class VehicleImpl {
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Vehicle vehicle = (x,y) -> x*y;
 		Vehicle vehicle1 = (x,y) -> x-y;
