@@ -19,15 +19,17 @@ public class LambdaVsAnonymous {
 	public void Lambda(){
 		final int cnt = 0; 
         Runnable r = ()->{
-            //int cnt = 5; //compilation error
-            System.out.println("in run"+cnt);};
+           //int cnt = 5; //compilation error
+            System.out.println("in run"+cnt);
+            };
         Thread t = new Thread(r);
         t.start();
 	}
 	
 	
 	public static void main(String[] args) {
-		 
+		new LambdaVsAnonymous().testAnonymous();
+		 new LambdaVsAnonymous().Lambda();
 	}
 
 }
