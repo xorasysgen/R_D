@@ -9,6 +9,7 @@ public class RandomGenerator {
 	
 	private static final Integer finalVar=10000; 
 
+	@SuppressWarnings("unused")
 	private static String getRandomToken() {
 
 		Random random = new Random();

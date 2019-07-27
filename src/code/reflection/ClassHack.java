@@ -8,7 +8,7 @@ import com.skbh.impl.LengthOfString;
 public class ClassHack {
 
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchFieldException, SecurityException, NoSuchMethodException, IllegalArgumentException, InvocationTargetException {
-		Class clazz=Class.forName("com.skbh.impl.LengthOfString");
+		Class<?> clazz=Class.forName("com.skbh.impl.LengthOfString");
 		LengthOfString object=(LengthOfString) clazz.newInstance();
 		Method m=clazz.getDeclaredMethod("lengthOfStringPrivate",new Class[]{String.class});
 		m.setAccessible(true);

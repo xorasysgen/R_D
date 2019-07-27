@@ -7,8 +7,6 @@ import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.LinkedList;
-import java.util.List;
 
 
 public class CsvReaderWorldFuture implements Serializable{
@@ -78,10 +76,12 @@ public class CsvReaderWorldFuture implements Serializable{
 			reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), Charset.forName("UTF-8")));
 			String line = null;
 			int i=0;
-			ParentWorldFutureIndex parentWorldFutureIndex=new ParentWorldFutureIndex();
-			List<WorldFutureIndex> data=new LinkedList<WorldFutureIndex>();
+			/*
+			 * ParentWorldFutureIndex parentWorldFutureIndex=new ParentWorldFutureIndex();
+			 * List<WorldFutureIndex> data=new LinkedList<WorldFutureIndex>();
+			 */
 			while ((line = reader.readLine()) != null) {
-				WorldFutureIndex wfi = new WorldFutureIndex();
+				//WorldFutureIndex wfi = new WorldFutureIndex();
 				if(line.length()>1){
 					i++;
 					if(i==1) {

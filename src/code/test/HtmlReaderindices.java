@@ -96,6 +96,7 @@ public class HtmlReaderindices {
 		
 	
 	public static void main(String[] args) {
-		System.out.println(new Gson().toJson(new HtmlReaderindices().getParentWorldFutureIndex()));
+		new HtmlReaderindices();
+		System.out.println(new Gson().toJson(HtmlReaderindices.getParentWorldFutureIndex()));
 	}
 }

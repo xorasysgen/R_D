@@ -108,7 +108,7 @@ public class TrendFinderLogicAlpha{
 
 		   ExecutorService executor = Executors.newFixedThreadPool(5);
 		   Map<String,Object> mapToBeRetruned=new HashMap<String,Object>();
-		   Object _8EMA = null,_13EMA = null,_34EMA = null,_40EMA = null,_200SMA = null;
+		   Object _8EMA = null,_13EMA = null;//_34EMA = null,_40EMA = null,_200SMA = null;
 		   try {
 		   executor.execute(FutureTask_8EMA);
 		   executor.execute(FutureTask_13EMA);

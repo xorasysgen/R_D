@@ -16,15 +16,16 @@ public class StreamTwo {
 		System.out.println(streamGenerated.collect(Collectors.toList()));
 		Stream<Integer> streamIterated = Stream.iterate(40, n -> n + 1).limit(20);
 		System.out.println(streamIterated.collect(Collectors.toList()));
-		String [] s={"2","1"};
+		String [] s={"bhaskar","sushil","kumar"};
 		List<String> list=Arrays.asList(s);
 		Optional<String> stream = list.stream().filter(element -> {
 		    System.out.println("filter() was called");
-		    return element.contains("2");
+		    return element.contains("s");
 		}).map(element -> {
 			System.out.println("map() was called");
 		    return element.toUpperCase();
 		}).findFirst();
+		System.out.println(stream.get());
 		
 	}
 	

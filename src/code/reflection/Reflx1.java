@@ -11,7 +11,7 @@ public class Reflx1 {
 
 	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException, InvocationTargetException, InstantiationException {
 		RandomGenerator r;
-		Class cla=null;
+		Class<?> cla=null;
 		Method m = null;
 		
 		cla=Class.forName("code.math.RandomGenerator");
@@ -20,7 +20,7 @@ public class Reflx1 {
 		m = cla.getDeclaredMethod("getRandomToken");
 		
 		m.setAccessible(true);
-		System.out.println(m.invoke(r, null));
+		System.out.println(m.invoke(r));
 		m.setAccessible(false);
 		
 		Field field = cla.getDeclaredField("finalVar");

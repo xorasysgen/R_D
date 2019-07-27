@@ -52,6 +52,7 @@ public class JavaSimpleExample {
         MongoClientURI uri  = new MongoClientURI("mongodb+srv://sushil:a5612c7290e37e1e6de13e9660d3c27b7b78ba9e5ce0e9adace2ff1a1bbeb5ce@jsr101db-gnelh.mongodb.net/boot?retryWrites=true"); 
         MongoClient client = new MongoClient(uri);
         MongoDatabase db = client.getDatabase(uri.getDatabase());
+        client.close();
         
         /*
          * First we'll add a few songs. Nothing is required to create the

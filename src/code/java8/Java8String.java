@@ -14,8 +14,6 @@ public class Java8String {
 		System.out.println(s);
 		String a="abc456";
 		String b="def$%^$^#-";
-		int al=a.length();
-		int bl=b.length();
 		a=a.concat(b);
 		b=a.substring(0, a.length()-b.length());
 		a=a.substring(b.length(), a.length());

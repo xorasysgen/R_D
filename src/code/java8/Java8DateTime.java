@@ -36,7 +36,8 @@ public class Java8DateTime   extends x {
 		
 	}
 	public static void main(String[] args) {
-		new  Java8DateTime().add();
+		x.add();
+		Java8DateTime.add();
 		Instant i=Instant.now();
 		System.out.println("Current timestamp " + i);
 		
@@ -86,7 +87,6 @@ public class Java8DateTime   extends x {
 		
 		LocalDate formatted = LocalDate.parse("2018-11-01");
 		System.out.println(formatted.format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
-		System.out.println(formatted.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 		
 	}
 
