@@ -3,8 +3,6 @@ package code.test.concurrent;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -88,7 +86,7 @@ public class BlockingQueueTest {
 		Runtime.getRuntime().gc();
 	
 		
-		File file1=new File("C:\\Users\\Admin\\Desktop\\wordcount.java");
+		File file1=new File("C:\\Users\\JSR101\\Desktop\\addon.txt");
 		try {
 			Desktop.getDesktop().open(file1);
 		} catch (IOException  exceptionObject) {
