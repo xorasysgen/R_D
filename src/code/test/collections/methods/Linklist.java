@@ -4,6 +4,7 @@ public class Linklist {
 
 	private Node node;
 	private Node first;
+	@SuppressWarnings("unused")
 	private Node last;  
 	private Integer size=0;
 	

@@ -16,6 +16,7 @@ class Keys {
 }
 
 public class HashcodeLeakExample extends Keys {
+	@SuppressWarnings("unused")
 	private String id;
 
 	public HashcodeLeakExample(String id) {
@@ -31,6 +32,7 @@ public class HashcodeLeakExample extends Keys {
 		System.out.println("v1 int ");
 	}
 
+	@SuppressWarnings("static-access")
 	public static void main(String args[]) {
 		Map<HashcodeLeakExample, String> map = null;
 		try {

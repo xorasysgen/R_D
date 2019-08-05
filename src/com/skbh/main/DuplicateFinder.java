@@ -1,10 +1,6 @@
 package com.skbh.main;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -29,7 +25,6 @@ public class DuplicateFinder {
 	
 	public static void main(String[] args) {
 		List<Integer> data=new ArrayList<Integer>();
-		Set<Integer> data1=new HashSet<Integer>();
 		/*System.out.println(data1.add(1));
 		System.out.println(data1.add(2));
 		System.out.println(data1.add(2));*/

@@ -78,6 +78,7 @@ public class AsymmetricCryptography {
 		return fbytes;
 	}
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws Exception {
 		AsymmetricCryptography ac = new AsymmetricCryptography();
 		PrivateKey privateKey = ac.getPrivate("KeyPair/privateKey");

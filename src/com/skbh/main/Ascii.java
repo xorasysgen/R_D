@@ -4,7 +4,6 @@ import java.util.IdentityHashMap;
 public class Ascii {
 
 	public static void main(String[] args) {
-		int a=97;
 		System.out.println(new Integer(1).hashCode());
 		char ch=(char) 97;
 		System.out.println(ch);
@@ -13,9 +12,12 @@ public class Ascii {
 		System.out.println(System.identityHashCode(new Integer(2)));
 		Integer zero=new Integer(0);
 		identityHashMap.put(zero, "Zero");
-		identityHashMap.put(new Integer(0), "Zero");
+		identityHashMap.put(2, "Zero");
 		identityHashMap.put(zero, "Zero");
+		identityHashMap.put(new Integer(0), "Zero");
 		System.out.println("identityHashMap.size() :" + identityHashMap.size());
+		System.out.println(identityHashMap);
+		
 		
 
 	}

@@ -7,6 +7,7 @@ public class StringTest {
 		return ss.length;
 	}
 	
+	@SuppressWarnings("unused")
 	public static Integer lengthOfSTring(String s) {
 		char[] ss=s.toCharArray();
 		int length=0;
@@ -21,6 +22,7 @@ public class StringTest {
 	
 	}
 	
+	@SuppressWarnings("unused")
 	public static Integer lengthOfSTRing(String s) {
 		char[] ss=s.toCharArray();
 		int length=0;

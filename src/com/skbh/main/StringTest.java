@@ -38,6 +38,7 @@ class Data implements Comparable<Data>{
 
 public class StringTest {
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		String str=new String("\\cx").intern();
 		String st="\\cx";

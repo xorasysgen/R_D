@@ -54,7 +54,8 @@ private static int  result1=1;
 		for (int i = 0; i <= 10; i++) {
 			System.out.println(febonacci(i));
 			
-		}//System.out.println(fab(10));
+		}
+		System.out.println(fab(10));
 	}
 
 }

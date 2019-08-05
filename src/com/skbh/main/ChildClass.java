@@ -30,7 +30,7 @@ public class ChildClass extends Root {
 	
 	public static void main(String[] args) {
 		//ChildClass client=new ChildClass();
-		Root root=new ChildClass();
+		new ChildClass();
 	
 		
 		

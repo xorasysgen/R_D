@@ -1,8 +1,6 @@
 package com.skbh.main;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ListExample {
@@ -50,7 +48,7 @@ List<String> list1=(size1<size2)?list:list2;
 		
 		//System.out.println(list.contains(list2.get(0)));
 		
-		int a=0,b=0,c=0,d=4;
+		int a=0,b=0,c=0;
 		if(a==1){
 			System.out.println("a==1");
 		}else if(b==2){

@@ -5,7 +5,6 @@ public interface InnerClassUnderInterface {
 	void dd(); 
 	class a1 { 
 		a1() { 
-			int j; 
 			System.out.println("in interfia"); 
 		}; 
 		public static void main(String a1[]) { 

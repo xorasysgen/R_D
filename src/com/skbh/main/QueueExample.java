@@ -2,11 +2,11 @@ package com.skbh.main;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
 
 public class QueueExample {
 
 	static class Innerclass{
+		@SuppressWarnings("unused")
 		private static int value=2588;
 	}
 	

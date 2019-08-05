@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 
 public class PatternExample {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
         while (true) {

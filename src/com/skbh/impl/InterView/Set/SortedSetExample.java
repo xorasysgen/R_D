@@ -1,16 +1,11 @@
 package com.skbh.impl.InterView.Set;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class SortedSetExample {
 
 	private static void sortedSetTest() {
-		List<Integer> list=new ArrayList<Integer>();
-		List<Integer> ll=new LinkedList<Integer>();
 		TreeSet<Integer> set1=new TreeSet<Integer>();
 		set1.add(1250);
 		set1.add(1320);

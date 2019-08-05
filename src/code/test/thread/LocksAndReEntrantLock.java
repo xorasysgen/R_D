@@ -14,8 +14,8 @@ public class LocksAndReEntrantLock  implements Runnable {
 		this.count=counter;
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws InterruptedException {
-		
 		CopyOnWriteArrayList<Integer> list=new CopyOnWriteArrayList<>();
 		CopyOnWriteArraySet<Integer> set=new CopyOnWriteArraySet<>();
 		ConcurrentHashMap<Integer,String> chm=new ConcurrentHashMap<>();

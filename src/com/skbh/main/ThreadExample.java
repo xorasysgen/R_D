@@ -12,6 +12,7 @@ public class ThreadExample implements Runnable {
 		this.name = name;
 	}
 
+	@SuppressWarnings("unused")
 	private int print(int a,int b){
 		System.out.println("print method called");
 		return a*b;
@@ -27,7 +28,6 @@ public class ThreadExample implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		ThreadExample threadExample = new ThreadExample();
 		ThreadExample threadExample1 = new ThreadExample();
 		/*threadExample.setName("T1");
 		threadExample.start();

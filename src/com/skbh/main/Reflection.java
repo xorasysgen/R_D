@@ -5,12 +5,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
 public class Reflection {
 
+	@SuppressWarnings("unused")
 	public  static List<StackTraceElement> execute() throws IllegalArgumentException,
 		NoSuchFieldException, SecurityException, IllegalAccessException {
 		List<StackTraceElement> list=new ArrayList<StackTraceElement>();
@@ -33,6 +33,7 @@ public class Reflection {
 		return list;
 	}
 	
+	@SuppressWarnings("unused")
 	public static void main(String... args) throws IllegalArgumentException, NoSuchFieldException, SecurityException, IllegalAccessException, ClassNotFoundException, InstantiationException {
 		//System.out.println(Reflection.execute().size());
 		for (StackTraceElement string : Reflection.execute()) {

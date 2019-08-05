@@ -9,6 +9,7 @@ interface Anonymous{
 
 class Cart{
 	
+	@SuppressWarnings("unused")
 	private int i;
 	
 	public Cart(int i) {

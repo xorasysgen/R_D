@@ -29,6 +29,7 @@ final class Key{
 
 public class TestFile {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		String s=new String("sushil");
 		Map<Key,String> map=new HashMap<Key,String>();

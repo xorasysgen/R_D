@@ -1,9 +1,7 @@
 package com.skbh.impl;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,11 +31,12 @@ public class DirectoryOperation {
 			try {
 				BufferedReader br=new BufferedReader(new FileReader(new File("D:\\temp\\mydir\\myFile.txt")));
 				System.out.println(br.lines().collect(Collectors.toList()));
-			} catch (FileNotFoundException exceptionObject) {
+				br.close();
+			} catch (IOException exceptionObject) {
 				exceptionObject.printStackTrace();
 			}		
 			
-			Path path=Paths.get("myFile1.txt");
+			Path path=Paths.get("myFile2.txt");
 			try {
 				Files.createFile(path);
 			} catch (IOException exceptionObject) {

@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegPatternTest {
 	
+	@SuppressWarnings("static-access")
 	private static String removeSpecialAndBugyCharacters(String character){
 		Pattern pattern=Pattern.compile("^[\u0000]*$").compile("[:!@#$%^&*/*+{};<>\"\"\'\']");
 		Matcher m=pattern.matcher(character);

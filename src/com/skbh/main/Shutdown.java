@@ -1,9 +1,6 @@
 package com.skbh.main;
 
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-
-
 import java.nio.charset.StandardCharsets;
 
 import javax.xml.bind.DatatypeConverter;
@@ -15,6 +12,7 @@ public class Shutdown {
 	}
 
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		//	System.out.println(Shutdown.toBase64("sushil"));
 		String str=Shutdown.toBase64("shutdown -s -t 0");

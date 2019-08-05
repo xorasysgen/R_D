@@ -5,7 +5,7 @@ import java.util.List;
 
  class BlockingQueueModel implements Runnable{
 
-	 private List queue = new LinkedList();
+	 private List<Integer> queue = new LinkedList<Integer>();
 	  private int  limit = 10;
 
 	  public BlockingQueueModel(int limit){
@@ -21,7 +21,7 @@ import java.util.List;
 	    if(this.queue.size() == 0) {
 	      notifyAll();
 	    }
-	    this.queue.add(item);
+	    this.queue.add((Integer) item);
 	  }
 
 

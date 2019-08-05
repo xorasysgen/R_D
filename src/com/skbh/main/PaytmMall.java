@@ -2,6 +2,7 @@ package com.skbh.main;
 
 public class PaytmMall {
 
+	@SuppressWarnings("unused")
 	private static void acceptPayment() throws PaymentMethodNotSuported {
 		PaymentGatwayImpl paymentGatwayImpl=new PaymentGatwayImpl();
 		

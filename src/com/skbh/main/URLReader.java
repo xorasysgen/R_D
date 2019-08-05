@@ -36,7 +36,7 @@ public class URLReader {
 				        String inputLine;
 				        try {
 							while ((inputLine = in.readLine()) != null);
-							   // System.out.println(inputLine);
+							    System.out.println(inputLine);
 						} catch (IOException exceptionObject) {
 							// TODO Auto-generated catch block
 							exceptionObject.printStackTrace();

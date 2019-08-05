@@ -1,10 +1,5 @@
 package com.skbh.main;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.TreeMap;
-import java.util.TreeSet;
-
 interface Ranjeet
 {
 	
@@ -69,10 +64,7 @@ static class sclazz{
 	System.out.println(zz.getValues());
 	System.out.println(z.getValues());
 	
-	TreeSet t;
-	HashMap ttt;
-	TreeMap tt;
-	ArrayList a; 
+	
 }//end main
 
 	@Override
