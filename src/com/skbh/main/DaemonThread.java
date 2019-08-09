@@ -5,7 +5,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.Semaphore;
 
 class Exe implements Runnable {
-Object cl;
+	Object cl;
 	@Override
 	protected void finalize() throws Throwable {
 		try{
@@ -88,7 +88,6 @@ public class DaemonThread {
 					} catch (InterruptedException exceptionObject) {
 						exceptionObject.printStackTrace();
 					}
-					
 					semaphore.release();
 				}
 				

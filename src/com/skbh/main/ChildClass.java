@@ -10,8 +10,8 @@ class Root{
 		System.out.println("static rootClass method");
 	}
 
-	public void test() {
-		System.out.println("TEst methd called");
+	 {
+		System.out.println("root block methd called");
 		
 	}
 	
@@ -27,6 +27,10 @@ public class ChildClass extends Root {
 		System.out.println(" static ChildClass method");
 	}
 	
+	 {
+			System.out.println("child block methd called");
+			
+		}
 	
 	public static void main(String[] args) {
 		//ChildClass client=new ChildClass();
