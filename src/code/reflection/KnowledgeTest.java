@@ -1,6 +1,6 @@
 package code.reflection;
 
-import java.lang.reflect.Field;
+import java.lang.reflect.Field;	
 import java.lang.reflect.Modifier;
 
 class Knowledge {
@@ -30,8 +30,8 @@ public class KnowledgeTest {
 	public static void main(String[] args) throws ReflectiveOperationException {
 		Knowledge knowledge = new Knowledge();
 		String answer = knowledge.askQuestion("question?");
-		KnowledgeTest.setFinalStaticField(Knowledge.class, "ANSWER", 500);
-		answer = knowledge.askQuestion("question?");
+		KnowledgeTest.setFinalStaticField(Knowledge.class, "ANSWER", 50000);
+		answer = knowledge.askQuestion("question? ");
 		System.out.println(answer);
 	}
 

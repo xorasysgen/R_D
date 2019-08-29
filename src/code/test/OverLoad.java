@@ -18,6 +18,7 @@ public class OverLoad {
 	public void  print(Integer x,Float y) {
 		System.out.println("Float x,Integer y");
 	}
+	
 	public void  print(Float x,Integer y) {
 		System.out.println("Float x,Integer y");
 	}
@@ -33,7 +34,6 @@ public class OverLoad {
 	public void  print(double x,Integer y) {
 		System.out.println("double x,Integer y");
 	}
-	
 	
 	public static void main(String[] args) {
 		new OverLoad().print(new Integer(2), new Float(5.0));

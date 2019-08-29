@@ -25,7 +25,6 @@ public static List<Integer> findUnion(Integer [] one,Integer[] two) {
 			for (Integer integer : list2) {
 				if(Collections.frequency(list1, integer)==0)
 					result.add(integer);
-				
 			}
 			return result;
 		}

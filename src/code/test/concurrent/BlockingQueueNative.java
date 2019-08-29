@@ -12,8 +12,8 @@ import java.util.List;
 	    this.limit = limit;
 	  }
 
-
 	  public synchronized void enqueue(Object item)
+	  
 	  throws InterruptedException  {
 	    while(this.queue.size() == this.limit) {
 	      wait();
@@ -44,7 +44,6 @@ import java.util.List;
 		
 	}
 }
- 
  
  public class BlockingQueueNative{
 	 

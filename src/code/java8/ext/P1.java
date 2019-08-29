@@ -31,6 +31,7 @@ public class P1 {
 			   .map(m -> m+2)
 			   .forEach(x-> list.add(x));
 	    		System.out.println("Final List" + finalList);
+	    		
 	    		System.out.println("List" + list);
 	   
 	}

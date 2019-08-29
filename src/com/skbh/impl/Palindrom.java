@@ -26,7 +26,7 @@ public class Palindrom {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(palindrom("1234564321"));
+		System.out.println(palindrom("RAMMAR"));
 			
 
 	}

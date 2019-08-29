@@ -13,8 +13,7 @@ public class LT {
 		System.out.println(190/20);
 		
 		System.out.println(458962&(15));
-		
-		
+			
 	}
 
 }

@@ -98,8 +98,8 @@ public class GannRoadMap {
 	}
 
 	public static void main(String[] args) {
-		String ltp = "11297".replace(",", "");
-		String close = "11244".replace(",", "");
+		String ltp = "11095".replace(",", "");
+		String close = "11065".replace(",", "");
 		;
 		String symbolName = "NIFTY";
 		RoadMapDataPoints roadMapDataPoints = roadMap(ltp, close, symbolName);

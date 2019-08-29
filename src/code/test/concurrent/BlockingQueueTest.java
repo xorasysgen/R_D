@@ -1,14 +1,7 @@
 package code.test.concurrent;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-
 
 class Producer implements Runnable{
 
@@ -27,7 +20,7 @@ class Producer implements Runnable{
 				bk.put(i);
 				
 			} catch (InterruptedException exceptionObject) {
-				// TODO Auto-generated catch block
+	
 				exceptionObject.printStackTrace();
 			}
 		}
@@ -35,7 +28,6 @@ class Producer implements Runnable{
 	}
 	
 }
-
 
 class Consumer implements Runnable{
 
@@ -64,8 +56,6 @@ class Consumer implements Runnable{
 	
 }
 
-
-
 public class BlockingQueueTest {
 	public static void main(String[] args) {
 		ArrayBlockingQueue<Integer> bk=new ArrayBlockingQueue<>(1);
@@ -78,39 +68,13 @@ public class BlockingQueueTest {
 		t3.setName("T3");
 		
 		
-	/*	t1.start();
+		t1.start();
 		t2.start();
-		t3.start();*/
+		t3.start();
 		
 		System.gc();
 		Runtime.getRuntime().gc();
-	
-		
-		File file1=new File("C:\\Users\\JSR101\\Desktop\\addon.txt");
-		try {
-			Desktop.getDesktop().open(file1);
-		} catch (IOException  exceptionObject) {
-			// TODO Auto-generated catch block
-			exceptionObject.printStackTrace();
-		}
-		LinkedList s=new LinkedList();
-		ArrayList ss=new ArrayList();
-		for (int i =1; i < 10; i++) {
-			s.add(i);
-			ss.add(i);			
-		}
-		s.add(90);
-		System.out.println(s.getFirst());
-		System.out.println(s.getLast());
-		System.out.println(ss.get(2));
-		Iterator it=s.listIterator(5);
-		while(it.hasNext()) {
-			System.out.print(it.next() + " ");
-			
-		}
 		
 	}
-	
-	
 
 }

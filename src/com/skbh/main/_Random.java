@@ -31,6 +31,7 @@ public class _Random {
 		
 		return salt.toString();
 	}
+	
 	public static void main(String[] args) throws NoSuchAlgorithmException {
 			System.out.println(getRandom());
 			System.out.println(getRandom1(5));

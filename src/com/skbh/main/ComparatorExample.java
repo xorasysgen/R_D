@@ -10,7 +10,6 @@ import code.test.Items;
 
 class CompareItems implements Comparator<Items>{
 
-
 	@Override
 	public int compare(Items o1, Items o2) {
 		

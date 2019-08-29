@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import com.google.common.collect.ImmutableList;
 
 public class BaeldungJ8 {
@@ -34,8 +33,6 @@ public class BaeldungJ8 {
 	    names.add("sushil");
 	    /*Sometimes you might encounter a situation where you might end up with a key collision. In such case, you should use toMap with another signature.*/
 	    System.out.println(map3);
-	    
-	    
 	    
 	    List<String> list = names.stream()
 	    		  .collect(Collectors.collectingAndThen(Collectors.toList(), ImmutableList::copyOf));
