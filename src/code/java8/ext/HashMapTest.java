@@ -1,14 +1,11 @@
 package code.java8.ext;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 
 public class HashMapTest {
 
-	
-	
 private static void hashMapMethod() {
 		
 		Map<Integer,String> list=new HashMap<Integer,String>();
@@ -21,10 +18,8 @@ private static void hashMapMethod() {
 		System.out.println(list);
 		
 		for(Entry<Integer, String> key :list.entrySet()) {
-			System.out.println(key);
+			System.out.println(key.getKey() + key.getValue());
 		}
-		
-		
 	}
 	
 	public static void main(String[] args) {

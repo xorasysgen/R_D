@@ -20,6 +20,7 @@ public class P1 {
 		   if(x%2==0)
 			   System.out.println(x);
 		   });
+	   
 	   int result = finalList.stream()
 	   .filter(p -> p%2==0)
 	   .mapToInt(m-> m+2)
@@ -31,7 +32,6 @@ public class P1 {
 			   .map(m -> m+2)
 			   .forEach(x-> list.add(x));
 	    		System.out.println("Final List" + finalList);
-	    		
 	    		System.out.println("List" + list);
 	   
 	}
