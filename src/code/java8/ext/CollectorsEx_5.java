@@ -50,7 +50,7 @@ public class CollectorsEx_5 {
 		
 	private void streamCollectorsCounting() {
 		System.out.println(list.stream()
-		.collect(Collectors.counting()));
+		.collect(Collectors.counting()).longValue());
 		
 	}
 	
