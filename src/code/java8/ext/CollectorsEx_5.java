@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 //https://www.baeldung.com/java-8-collectors
 public class CollectorsEx_5 {
 
-	private List<String> list=new ArrayList<String>(Arrays.asList(null,"A","","B","C","D","F", "", "G","a", null, "bb", "ccc", "dd", null));
+	private List<String> list=new ArrayList<String>(Arrays.asList(null,"AA","","B","C","D","F", "", "G","a", null, "bb", "ccc", "dd", null));
 	
 	//stream to list	
 	private void streamTOList() {
@@ -69,6 +69,7 @@ public class CollectorsEx_5 {
 		System.out.println(p);
 		p+=-p--;
 		System.out.println(p);
+		
 		
 	}
 
