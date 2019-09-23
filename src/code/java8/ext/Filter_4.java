@@ -23,8 +23,9 @@ public class Filter_4 {
 		Map<String,Long> tMap=list.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		
-		System.out.println(list.stream()
-				.collect(Collectors.counting()));
+		Long a=list.stream()
+				.collect(Collectors.counting());
+		System.out.println(a);
 		
 		list.listIterator().forEachRemaining(x->System.out.println(x.length()));
 		return null;
