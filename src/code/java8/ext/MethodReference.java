@@ -63,6 +63,7 @@ public class MethodReference {
 		
 		List<String> list=Arrays.asList("sushil","kumar","bhaskar");
 		list.forEach(MethodReference::print);
+		list.forEach(System.out::print);
 		new Thread(new Runnable() {
 
 			@Override
