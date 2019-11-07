@@ -36,12 +36,7 @@ public class FlatMapOrMap {
 		streamOfWords=Arrays.stream(arrayOfWords);
 	    streamOfWords.map(s->s.split("")).flatMap(Arrays::stream).distinct().collect(Collectors.toList()).forEach(System.out::print);
   	    
-	    for(int i=1; i<25; i++) {
-	    	System.out.print("1^" + i +  " =  ");
-	    	System.out.print(1^i*-1);
-	    	System.out.println("");
-	    	
-	    }
+	  
 	    
 
 	}

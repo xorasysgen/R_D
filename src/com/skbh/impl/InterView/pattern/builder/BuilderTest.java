@@ -10,6 +10,7 @@ public class BuilderTest {
 				.setServerType("web")
 				.build();
 		System.out.println(server);
+		System.out.println(server.getPort());
 
 	}
 

@@ -18,7 +18,7 @@ public class SupplierTest  implements Supplier<String> {
 		System.out.println(s.get());
 		Supplier<String> s1=()-> {return "default";};
 		
-		//System.out.println(s1.get());
+		System.out.println(s1.get());
 		List<String> list=new ArrayList<String>(Arrays.asList("hi","hello","hmm","bye"));
 		List<String> list2=new ArrayList<String>(Arrays.asList());
 		System.out.println(list.stream().findAny().orElseGet(s1));

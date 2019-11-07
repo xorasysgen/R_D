@@ -7,8 +7,7 @@ public final class BootServer { //  step #1 make class and fields final
 	private final String serverType;
 	private final String listenerType;
 	
-	
-	
+
 	private BootServer(Builder builder) {// step #2 create private constructor
 		this.port = builder.port;
 		this.serverName = builder.serverName;
@@ -57,6 +56,23 @@ public final class BootServer { //  step #1 make class and fields final
 			return this;
 		}
 		
+	} // end of static builder class
+	
+	
+	public Integer getPort() {
+		return port;
+	}
+
+	public String getServerName() {
+		return serverName;
+	}
+
+	public String getServerType() {
+		return serverType;
+	}
+
+	public String getListenerType() {
+		return listenerType;
 	}
 
 	@Override
