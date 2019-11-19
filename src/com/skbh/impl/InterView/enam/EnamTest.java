@@ -16,12 +16,11 @@ package com.skbh.impl.InterView.enam;
 
 
 enum calulator {
-		
+	
 	add {
 		@Override
 		public int exceuteTask(int a, int b) {
-			getA();
-			return getA() + a + getB() + b;
+			return this.a + this.b + a + b;
 		}
 	},
 	
@@ -34,16 +33,13 @@ enum calulator {
 	},
 	
 	multiply{
-
 		@Override
 		public int exceuteTask(int a, int b) {
 			return a*b;
 		}
-		
 	},
 	
 	divide{
-
 		@Override
 		public int exceuteTask(int a, int b) {
 			if(b==0)
@@ -51,11 +47,11 @@ enum calulator {
 			else
 				return a/b;
 		}
-		
 	};
 	
-	private Integer a;
-	private Integer b;
+
+	protected Integer a;
+	protected Integer b;
 	
 	private calulator(){
 		this.a=500;
@@ -63,36 +59,14 @@ enum calulator {
 		System.out.println("Constructor called");
 	}
 	
-	
-	public Integer getA() {
-		return a;
-	}
-
-
-	public void setA(Integer a) {
-		this.a = a;
-	}
-
-
-	public Integer getB() {
-		return b;
-	}
-
-
-	public void setB(Integer b) {
-		this.b = b;
-	}
-
 
 	public  abstract int  exceuteTask(int a, int b);
 }	
 
 public class EnamTest {
-
 		public static void main(String[] args) {
 			System.out.println(calulator.add.exceuteTask(10, 20));
 			System.out.println(calulator.subtract.exceuteTask(10, 5));
-
 	}
 
 }

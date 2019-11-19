@@ -38,10 +38,19 @@ public class ThreadCallable {
 			}
 			
 		});
+		
+		
+		Future<Integer> futureType1=service.submit(()->{			
+				return new Calculator().add(12,4444,69,52);
+		});
+			
+		
+		
 		service.shutdown();
 		long end=System.currentTimeMillis();
 		try {
 			System.out.println("Sum : " + futureType.get());
+			System.out.println("Sum : " + futureType1.get());
 			System.out.println("time consumed  : " + (end-start));
 		} catch (InterruptedException exceptionObject) {
 			// TODO Auto-generated catch block

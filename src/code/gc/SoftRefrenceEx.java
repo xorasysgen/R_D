@@ -48,10 +48,7 @@ public class SoftRefrenceEx {
 		ref=null;
 		System.gc();// gc should call but SoftReference Class prevents it to not clean up
 		System.out.println(r.get().getX());
-		
-		Comparator c;
-		
-		
+			
 	}
 
 }
