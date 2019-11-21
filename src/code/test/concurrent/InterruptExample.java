@@ -7,12 +7,7 @@ public class InterruptExample {
 		@Override
 		public void run() {
 			int i=0;
-			boolean flag=false;
-			boolean flag1=false;
-			while(!flag){
-				flag=Thread.currentThread().isInterrupted();
-				flag1=Thread.interrupted();
-				System.out.println(flag + " " +  flag1);
+			while(!Thread.interrupted()){
 				System.out.println(Thread.currentThread().getName() + " Running Id # " + i++);
 			}
 			
