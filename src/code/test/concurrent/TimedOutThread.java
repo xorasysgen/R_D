@@ -16,7 +16,7 @@ public class TimedOutThread {
 
 	private static void runThread() {
 		ExecutorService threadPool= Executors.newFixedThreadPool(3);
-		threadPool.submit(()-> {
+		threadPool.execute(()-> {
 			while(!Thread.currentThread().isInterrupted()) {
 				System.out.println("running...");
 			}
