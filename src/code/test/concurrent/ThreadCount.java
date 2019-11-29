@@ -1,4 +1,4 @@
-package code.test.thread;
+package code.test.concurrent;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
@@ -17,10 +17,10 @@ public class ThreadCount extends Thread {
 
 	@Override
 	public void run() {
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 10000; i++) {
 			System.out.println(Thread.currentThread().getName() + " Acquired CPU");
 			try {
-				Thread.sleep(2000);
+				semaphore.acquire();
 			} catch (Exception e) {
 			} finally {
 			semaphore.release();
@@ -33,7 +33,7 @@ public class ThreadCount extends Thread {
 
 	public static void main(String[] args) {
 		Counter counter = new Counter();
-		Semaphore semaphore=new  Semaphore(1);
+		Semaphore semaphore=new  Semaphore(100);
 		ThreadCount t1 = new ThreadCount(counter,semaphore);
 		ThreadCount t2 = new ThreadCount(counter,semaphore);
 		Lock lock1 = new ReentrantLock();

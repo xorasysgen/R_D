@@ -1,4 +1,4 @@
-package code.test.thread;
+package code.math;
 
 import java.util.Arrays;
 

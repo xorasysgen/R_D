@@ -13,14 +13,11 @@ public class WordCount {
 		String [] strings={"a", "a", "b", "f", "b", "a", "z"};
 		 Map<String,Integer> map = new HashMap<String,Integer>();
 		  for (String s: strings) {
-		    
-		    if (map.containsKey(s)) {  
-		    	Integer count = map.get(s);
-		    	map.put(s, count + 1);
-		    }
-		    else {// first time we've seen this string
+		    if (map.containsKey(s))  
+		    	map.put(s, map.get(s) + 1);
+		    else// first time we've seen this string
 		    	map.put(s, 1);
-		    }
+		   
 		  }
 		 System.out.println(map);
 		 Map<String,Integer> m=new HashMap<>();

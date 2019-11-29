@@ -1,9 +1,8 @@
-package code.test.thread;
+package code.test.concurrent;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -52,8 +51,13 @@ public class ArrayListSync {
 	}
 
 	public Integer getMin() {
+		try {
+			lock.readLock().lock();
 		if (list != null && list.size() > 0) {
 			return Collections.min(list);
+		}
+		} finally {
+			lock.readLock().unlock();
 		}
 		return null;
 	}
@@ -65,21 +69,20 @@ public class ArrayListSync {
 
 			@Override
 			public void run() {
-				for (int i = 0; i < 5; i++) {
-					arrayListSync.addElement(new Random().nextInt(10));
+				for (int i =1111; i < 11019; i++) {
+					arrayListSync.addElement(i);
 				}
 
 			}
 		});
 
 		t1.start();
-
 		Thread t2 = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
 				for (int i = 0; i < 5; i++) {
-					arrayListSync.addElement(new Random().nextInt(50));
+					arrayListSync.addElement(i);
 				}
 
 			}
@@ -87,9 +90,10 @@ public class ArrayListSync {
 
 		t2.start();
 
-		System.out.println(arrayListSync.getMax());
-		System.out.println(arrayListSync.getMin());
-		System.out.println(arrayListSync.getList());
+		System.out.println("Max " + arrayListSync.getMax());
+		System.out.println("Min " + arrayListSync.getMin());
+		arrayListSync.getList();
+		System.out.println("sushil");
 
 	}
 

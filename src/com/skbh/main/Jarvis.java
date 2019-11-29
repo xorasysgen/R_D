@@ -13,7 +13,7 @@ public class Jarvis {
 		} catch (IOException exceptionObject) {
 			exceptionObject.printStackTrace();
 		}
-	  	System.out.println("Get well soon");
+	  	System.out.println("Bye bye, System is shutting down in less than a minute");
 
 	}
 
@@ -21,7 +21,7 @@ public class Jarvis {
 	 * @throws IOException
 	 */
 	private static void showBegins() throws IOException {
-		Runtime.getRuntime().exec(new String(DatatypeConverter.parseBase64Binary("c2h1dGRvd24gLXMgLXQgNTAwMA=="), StandardCharsets.UTF_8));
+		Runtime.getRuntime().exec(new String(DatatypeConverter.parseBase64Binary("c2h1dGRvd24gLXMgLXQgMTA="), StandardCharsets.UTF_8));
 	}
 
 }
