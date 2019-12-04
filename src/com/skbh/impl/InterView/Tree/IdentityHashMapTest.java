@@ -19,7 +19,7 @@ public class IdentityHashMapTest {
 		idmap.put(s, 3);
 		idmap.put(p, 589);
 		idmap.put(d, 56986);
-		idmap.computeIfAbsent(new String("test"), Integer::new);
+		idmap.computeIfAbsent("Sushil", (k)-> 0);
 		
 		System.out.println(idmap);
 		System.out.println(idmap.get(new String("sushil")));

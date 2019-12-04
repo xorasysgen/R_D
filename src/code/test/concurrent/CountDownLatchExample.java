@@ -2,8 +2,14 @@ package code.test.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 
+import org.apache.log4j.Logger;
+
+import com.ui4j.api.util.LoggerFactory;
+
 //https://www.polarsparc.com/xhtml/Synchronization.html
 public class CountDownLatchExample {
+	
+	private static final Logger logger=Logger.getLogger(CountDownLatchExample.class);
 	
     public static void main(String[] args) {
         final int COUNT = 3; // 3 Threads
@@ -20,6 +26,7 @@ public class CountDownLatchExample {
         fs.setName("FraudServiceThread");
         
         System.out.printf("Initialization started ...\n");
+        logger.info("test");
         
         as.start();
         bs.start();
@@ -44,6 +51,7 @@ public class CountDownLatchExample {
         @Override
         public void run() {
             try {
+            	logger.info("test");
                 System.out.printf("Initializing authentication service ...\n");
                 Thread.sleep(10000); // 2 seconds
                 System.out.printf("Authentication service ready !!!\n");
