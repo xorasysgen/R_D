@@ -5,14 +5,13 @@ import java.util.List;
 
 public class ArrayTest {
 
-	public static int sortMove(List<Integer> list) {
-		Integer [] arr=(Integer [] )list.toArray();
+	public static int sortMove(List<Integer> list, int start, int end) {
 		int [] array=list.stream().mapToInt(i->i).toArray();
 		int counter=0;
 		int temp;
-	    for (int i = 0; i < array.length; i++) {
-	        for (int j = i+1; j < array.length; j++) {
-	            if (array[j] < array[i]) {
+	    for (int i = start; i < end; i++) {
+	        for (int j = start+1; j < end; j++) {
+	            if (array[j] > array[i]) {
 	            	temp=array[i];
 	                array[i] = array[j];
 	                array[j]=temp;
@@ -26,7 +25,7 @@ public class ArrayTest {
 	}
 	
 	public static void main(String[] args) {
-		ArrayTest.sortMove(Arrays.asList(3,1,3,2));
+		ArrayTest.sortMove(Arrays.asList(3,98,56,4,1,3,2,5,8,9,23,56),1,6);
 
 	}
 
