@@ -16,9 +16,7 @@ public class Ascii {
 		identityHashMap.put(zero, "Zero");
 		identityHashMap.put(new Integer(0), "Zero");
 		System.out.println("identityHashMap.size() :" + identityHashMap.size());
-		System.out.println(identityHashMap);
-		
-		
+		System.out.println(identityHashMap);		
 
 	}
 

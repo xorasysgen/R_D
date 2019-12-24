@@ -1,5 +1,9 @@
 package code.functionalInterface;
 
+import java.util.Comparator;
+import java.util.Optional;
+import java.util.OptionalInt;
+
 public class LambdaVsAnonymous {
 
 	@SuppressWarnings("unused")
@@ -18,9 +22,9 @@ public class LambdaVsAnonymous {
 	}
 	
 	public void Lambda(){
-		final int cnt = 0; 
+		 int cnt = 0; 
         Runnable r = ()->{
-           //int cnt = 5; //compilation error
+          // int cnt = 5; //compilation error
             System.out.println("in run"+cnt);
             };
         Thread t = new Thread(r);
@@ -29,8 +33,13 @@ public class LambdaVsAnonymous {
 	
 	
 	public static void main(String[] args) {
-		new LambdaVsAnonymous().testAnonymous();
-		 new LambdaVsAnonymous().Lambda();
+		
+		  new LambdaVsAnonymous().testAnonymous(); new LambdaVsAnonymous().Lambda();
+		  Comparable c; Comparator c1; Optional o; OptionalInt o1;
+		 
+
+		 
+			 
 	}
 
 }

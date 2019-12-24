@@ -6,7 +6,7 @@ class Root{
 		System.out.println("root class construtor called");
 	}
 	
-	{
+	static {
 		System.out.println("static rootClass method");
 	}
 
@@ -23,7 +23,7 @@ public class ChildClass extends Root {
 		System.out.println("Child Class construtor");
 	}
 	
-	{
+	static {
 		System.out.println(" static ChildClass method");
 	}
 	

@@ -4,8 +4,6 @@ import java.util.concurrent.CountDownLatch;
 
 import org.apache.log4j.Logger;
 
-import com.ui4j.api.util.LoggerFactory;
-
 //https://www.polarsparc.com/xhtml/Synchronization.html
 public class CountDownLatchExample {
 	

@@ -19,7 +19,7 @@ public class BaeldungJ8_2 {
 		
 		String s="sushil kumar bhaskar";/*Splitting Strings with Stream API*/
 		List<String> slist=Stream.of(s.split(","))
-		.map(m->new String(m))
+		.map(String::new)//.map(m->new String(m))
 		.collect(Collectors.toList());
 		System.out.println(slist);
 		
@@ -41,8 +41,8 @@ public class BaeldungJ8_2 {
 		Stream<String> stream = valueList.stream();
 		stream.reduce((first, second) -> second)
 		  .orElse(null);
-		System.out.println(stream.parallel().collect(Collectors.toList()));
-
+		//System.out.println(stream.parallel().collect(Collectors.toList()));
+		//stream has already been operated upon or closed
 		
 		Supplier<Stream<String>> streamSupplier 
 		  = () -> Stream.of("A", "B", "C", "D");

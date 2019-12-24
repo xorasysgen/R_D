@@ -6,7 +6,7 @@ public class Universe  implements Serializable{
 
 	private static final long serialVersionUID = 6088228047026709701L;
 	private String planet;
-	private transient Integer  planateId;
+	private static Integer  planateId;
 	private Double  planateMass;
 	
 	public String getPlanet() {

@@ -17,7 +17,7 @@ public class BaeldungJ8_3_Remove_Duplicate {
 		String s="SUSHILKUMARBHASKAR";
 		IntStream istream=s.chars();
 		System.out.println(istream.count());
-		System.out.println(s.codePoints().mapToObj(c-> (char)c).collect(Collectors.toList()));
+		System.out.println("Code Points" + s.codePoints().mapToObj(c-> (char)c).collect(Collectors.toList()));
 		List<Customer> customer=new Customer().getAllCustomer();
 		//How can I get the last element of a stream?
 		Customer cust=(customer.stream().reduce((a,b)->b).get());//last element in list
@@ -34,8 +34,8 @@ public class BaeldungJ8_3_Remove_Duplicate {
 			System.out.println("value found" + a.get(a.indexOf(8)));
 		}
 		System.out.println(a);
-		while (a.remove(new Integer(1)) || a.remove(null));//  remove null and other object
-		System.out.println(a);
+		while (a.remove(new Integer(1)) || a.remove(new Integer(0))|| a.remove(null));//  remove null and other object
+		System.out.println("after remove" + a);
 		System.out.println(customer);
 		while (customer.remove(null));//  remove null 
 		System.out.println(customer);
