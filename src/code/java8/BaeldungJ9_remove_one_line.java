@@ -25,6 +25,7 @@ public class BaeldungJ9_remove_one_line {
 	
 	public static void main(String[] args) {
 		BaeldungJ9_remove_one_line.removeNullValuesFromList();
+		
 	}
 
 }

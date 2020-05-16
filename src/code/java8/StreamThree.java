@@ -1,5 +1,6 @@
 package code.java8;
 
+import java.util.Optional;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -13,6 +14,7 @@ public class StreamThree {
 	System.out.println(stream.collect(Collectors.toList()));
 	Stream<String> streamPattern=Pattern.compile(",").splitAsStream("a,b,c,d,e,f,a,b,c,r,d,,,,,a,a").distinct();
 	System.out.println(streamPattern.collect(Collectors.toList()));
+	Optional op;
 	}
 
 }
